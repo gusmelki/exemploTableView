@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		AC14298E1C7FB73C00BBF151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC14298D1C7FB73C00BBF151 /* AppDelegate.swift */; };
-		AC1429901C7FB73C00BBF151 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC14298F1C7FB73C00BBF151 /* ViewController.swift */; };
 		AC1429931C7FB73C00BBF151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC1429911C7FB73C00BBF151 /* Main.storyboard */; };
 		AC1429951C7FB73C00BBF151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC1429941C7FB73C00BBF151 /* Assets.xcassets */; };
 		AC1429981C7FB73C00BBF151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC1429961C7FB73C00BBF151 /* LaunchScreen.storyboard */; };
 		AC1429A31C7FB73C00BBF151 /* ProjetoTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1429A21C7FB73C00BBF151 /* ProjetoTableViewTests.swift */; };
 		AC1429AE1C7FB73C00BBF151 /* ProjetoTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1429AD1C7FB73C00BBF151 /* ProjetoTableViewUITests.swift */; };
+		AC1429BC1C7FB80B00BBF151 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1429BB1C7FB80B00BBF151 /* TableViewController.swift */; };
+		AC1429BE1C7FD24500BBF151 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1429BD1C7FD24500BBF151 /* DetailViewController.swift */; };
+		AC1429C01C7FE00300BBF151 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1429BF1C7FE00300BBF151 /* MyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		AC14298A1C7FB73C00BBF151 /* ProjetoTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetoTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC14298D1C7FB73C00BBF151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC14298F1C7FB73C00BBF151 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC1429921C7FB73C00BBF151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC1429941C7FB73C00BBF151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC1429971C7FB73C00BBF151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		AC1429A91C7FB73C00BBF151 /* ProjetoTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjetoTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC1429AD1C7FB73C00BBF151 /* ProjetoTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoTableViewUITests.swift; sourceTree = "<group>"; };
 		AC1429AF1C7FB73C00BBF151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC1429BB1C7FB80B00BBF151 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		AC1429BD1C7FD24500BBF151 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		AC1429BF1C7FE00300BBF151 /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				AC14298D1C7FB73C00BBF151 /* AppDelegate.swift */,
-				AC14298F1C7FB73C00BBF151 /* ViewController.swift */,
+				AC1429BB1C7FB80B00BBF151 /* TableViewController.swift */,
+				AC1429BF1C7FE00300BBF151 /* MyTableViewCell.swift */,
+				AC1429BD1C7FD24500BBF151 /* DetailViewController.swift */,
 				AC1429911C7FB73C00BBF151 /* Main.storyboard */,
 				AC1429941C7FB73C00BBF151 /* Assets.xcassets */,
 				AC1429961C7FB73C00BBF151 /* LaunchScreen.storyboard */,
@@ -256,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC1429901C7FB73C00BBF151 /* ViewController.swift in Sources */,
+				AC1429BE1C7FD24500BBF151 /* DetailViewController.swift in Sources */,
+				AC1429C01C7FE00300BBF151 /* MyTableViewCell.swift in Sources */,
 				AC14298E1C7FB73C00BBF151 /* AppDelegate.swift in Sources */,
+				AC1429BC1C7FB80B00BBF151 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
